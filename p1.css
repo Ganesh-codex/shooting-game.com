@@ -1,0 +1,122 @@
+*{
+  
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.btn{
+    text-decoration: none;
+ 
+    border: 2px solid black;
+    background-color:azure;
+    margin-right: 100%;
+    margin-left: 10%;
+    line-height: 100px;
+    border-radius: 50px 5px ;
+
+    
+}
+
+
+.menu li{
+    margin: 10px;
+    padding: 10px 20px;
+    
+
+}
+.cant a {
+    text-decoration: none;
+    transition: none;
+    text-align: center;
+    
+}
+
+
+
+
+.menu a{
+    color:black;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    padding: 20px 80px 20px 80px;
+    border-radius: 75px;
+    text-decoration: none;
+    overflow: hidden;
+}
+.menu a:hover{
+    box-shadow: 0px 0px 10px rgba(0,255,255, 1);
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color:transparent;
+    -webkit-text-stroke: 2px #fff;
+    background: url("back.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite ;
+    font-weight: 1000px;
+    font-size: 130px;
+    overflow-x: hidden;
+
+}
+@keyframes back{
+    100%{
+        background-position: 1200px 0;
+    }
+}
+body{ 
+    transition: 0ms;  
+    overflow: hidden;  
+}
+.cant{
+    height: 100vh;
+    width: 100%;
+    background-image: url(p1.jpg);
+    background-size:cover;
+    transition:none;
+}
+/* fire video css code */
+/* #video-container {
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    width: 100%;
+    height: 100%;
+    z-index: -3; 
+}
+
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
+
+.image-container {
+    position: absolute;
+    /* height: 30px; */
+    width: 100%;
+    top: 80%;
+    left: -100px;
+    animation: moveImage 10s linear infinite; 
+    
+}
+
+@keyframes moveImage {
+    0% {
+        left: -600px;
+    }
+    100% {
+        /* left: calc(100% + 100px);  */
+        left: 1px;
+    }
+}
+

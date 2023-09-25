@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shooting Game</title>
+</head>
+<style>
+    
+body{
+    overflow: hidden;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+</style>
+<body>
+    <div class="video">
+        <video autoplay src="Shooting.mp4"></video>
+    </div>
+
+  <script>
+    audio = new Audio('first.mp3');
+    audio.play();
+    audio.loop=true;
+    setTimeout(function() {
+      window.location.href = 'p1.html';
+    }, 20000);
+  </script>
+</body>
+</html>

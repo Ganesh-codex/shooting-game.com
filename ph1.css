@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+  
+    
+}
+.cantainner{
+    height: 100vh;
+    width: 100%;
+    background: url(m.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+   
+}
+
+.shooter{
+    height: 245px;
+    width: 400px;
+    border: 1px solid transparent;
+    background-image: url(s.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    position: absolute;
+    bottom: 0px;
+}
+.plane{
+    height: 245px;
+    width: 400px;
+    border: 1px solid transparent;
+    background-image: url(p.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    background-size: 70%;
+    position: absolute;
+   top: 50px;
+   left: 100%;
+}
+#splane{
+    top: 200px;
+}
+.rocket{
+    height: 125px;
+    width: 100px;
+    border: 1px solid transparent;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: auto;
+    display:inline-block;
+    position: absolute;
+    top: 50px;
+    display: none;
+
+}
+#scoreCont{
+    font-size: 25px;
+    color: #54212f;
+    font-weight: bold;
+    position: absolute;
+    right: 65px;
+    top: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+}
+.click{
+    display: none;
+}
+.w{
+    position: relative;
+    top:63px;
+    color: black;
+    border: 2px solid transparent;
+    font-size: 53px;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.gameOver{
+    position: relative;
+    top:63px;
+    font-size: 53px;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.planeAni{
+    animation: planeAni 5s linear infinite;
+}
+@keyframes planeAni{
+    0%{
+        left: 100vw;
+    }
+
+   100%{
+        left: -10vw;
+    }
+}

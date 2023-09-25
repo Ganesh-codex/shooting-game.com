@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+*{
+    margin: 0px;
+    padding:0px;
+    /* background-color: bisque; */
+    font-family:sans-serif;
+}
+.main_box{
+  height: 100vh;
+  background:url(photo.jpg);
+  background-size: cover;
+    border: 2px solid black;
+}
+.btn_one{
+    color: white;
+    font-weight: 50px;
+    position: absolute;
+ 
+    left: 60px;
+}
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height:100vh;
+    width: 200px;
+    background-color:rgba(255,255,255, 0.2);
+    box-shadow: 0px 0px 6px rgba(255,255,255, 0.5);
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100% ;
+    line-height: 60px;
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 30px;
+    font: size 600px;;
+    color: white;
+    font-weight:900px;
+}
+.sidebar_menu .menu{
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+}
+
+.sidebar_menu .menu a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    position: absolute;
+   
+   
+}
+.sidebar_menu .menu li{
+    margin: 10px;
+    padding: 10px 20px;
+}
+.sidebar_menu .social_media{
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    left: 25%;
+    top: 90%;
+}
+.sidebar_menu .social_media i{
+    padding: 8px;
+    
+}
+.btn_two{
+    position: absolute;
+    left: 75%;
+    font-size: 30px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li :hover{
+    box-shadow: 0px 0px 4px rgba(255,255,255, 0.5);
+}
+#check:checked ~.sidebar_menu{
+    left: 0px;
+   
+
+
+}
